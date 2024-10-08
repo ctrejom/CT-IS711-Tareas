@@ -10,7 +10,4 @@ async function obtenerUsuarios() {
         console.error('Error al obtener los usuarios:', error);
      }
 }
-obtenerUsuarios().finally(
-    console.log("Final del Primer Ejercicio"),
-    console.log("-----------------------------")
-)
+obtenerUsuarios()
