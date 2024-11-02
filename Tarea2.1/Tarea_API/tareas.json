@@ -1,0 +1,9 @@
+[
+    {
+        "titulo": "Limpiar el Cuarto",
+        "descripcion": "Se debe de limpiar el cauarto",
+        "completada": true,
+        "id" : "00d4a2ae-67d8-42d7-9150-98af7b6d1e8a",
+        "fecha_creacion": "2024-10-30T14:30:00"
+    }
+]
