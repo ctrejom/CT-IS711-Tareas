@@ -1,16 +1,14 @@
 import express from 'express'
+import ProductsRouter from './api-tienda/routes/products.js'
 
 const app = express()
 
-const PORT = Process.env.PORT || 3000
+app.disable('x-powered-by')
+app.use(express.json())
 
-app.get('/products', (req, res) => {
-    res.send('Hola')
-})
+const PORT = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-    res.send('Hola')
-})
+app.use('/products', ProductsRouter)
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
